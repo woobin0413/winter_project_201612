@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+   
+      margin: auto;
+      width: 350px;
+  }
+  .carousel-caption>h3{
+    color: yellow;
+    font-weight: bold;
+  }
+
+.item>p {
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+}
+body {
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+.container-fluid{
+    font-size: 25px;
+}
+
+.col-xs-6>strong{
+  font-size: 40px;
+  color: white;
+
+}
+
+.col-xs-6 {
+  background-color: grey;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.container {
+
+  width: 1200px;
+  height: 900px;
+}
+
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="home.html">SPACE B</a> </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="home.html">Home</a></li>
+                  <li><a href="#">Messages</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                  <div class="form-group input-group">
+                    <input type= "text" class="form-control" placeholder="Search.."> <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <span class="glyphicon glyphicon-search"></span> </button>
+                    </span>
+                  </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="assets/php/addstudent.php"><span class="glyphicon glyphicon-user"></span> Donation</a></li>
+                  <li><a href="login/index.php"><span class="glyphicon glyphicon-user"></span> My page</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <br><br>
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+ 
+          <h3>Bootstrap</h3>
+        
+
+        <img src="https://www.gaslampmedia.com/media/bootstrap.png">
+        <br>
+          <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+      
+          <p>With Bootstrap, you get extensive and beautiful documentation for common HTML elements, dozens of custom HTML and CSS components, and awesome jQuery plugins.</p><br><br><br><br>
+      </div>
+
+      <div class="item">
+
+          <h3>Java</h3>
+
+        <img src="http://therealdanvega.com/wp-content/uploads/2016/01/java.png">
+        
+        
+          <p>Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.</p><br><br><br><br>
+      </div>
+    
+      <div class="item">
+
+          <h3>Swift</h3>
+         
+
+        <img src="https://developer.apple.com/swift/images/swift-og.png">
+        <br>
+         <p>Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, macOS, watchOS, tvOS, and Linux. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of extant Objective-C (ObjC) code written for Apple products.</p><br><br><br><br>
+      </div>
+
+      <div class="item">
+    
+          <h3>PHP</h3>
+         
+    
+        <img src="https://greenhatworld.com/wp-content/uploads/2015/10/PHP-MySQL-Web-Development-Course.jpg">
+       <br>
+         <p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p><br><br><br><br>
+      </div>
+
+      <div class="item">
+
+          <h3>JavaServer Pages (JSP)</h3>
+          
+     
+        <img src="http://image.flaticon.com/icons/svg/28/28968.svg">
+       <br>
+        <p>JavaServer Pages (JSP) is a technology that helps software developers create dynamically generated web pages based on HTML, XML, or other document types. Released in 1999 by Sun Microsystems, JSP is similar to PHP and ASP, but it uses the Java programming language.</p><br><br><br><br>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<hr>
+
+          <div class="container">
+
+
+            <div class="row">
+
+              <div class="col-xs-6">
+
+               <strong>AFFILIATIONS & ACTIVITIES</strong>
+               <br><br><br><br> <br><hr>
+               
+               <div class="jumbotron">
+
+               <p>President of International Journalism club (ARCHER).</p>
+                 <p>Participated honors society and dean’s list in high school and college.</p>
+                 <p>Korean certificate of Engineer Information Processing. </p>
+                 <p>Familiar with Linux operating system and network security systems. </p>
+                 <p>Teacher Assistance for programming courses (Intro to Java, Intro to Web Development and others). </p>
+
+                 <br><br><br><br><br><br>
+
+
+
+               </div>
+             </div>
+
+             
+             <div class="col-xs-6">
+              <strong>SKILLS</strong>
+               <br><br><br><br><br>
+               <hr>
+               <div class="jumbotron">
+                 <p>Proficient in Microsoft Word, Excel, Outlook, and PowerPoint, Access</p>
+
+                 <p>Experienced with both back-end and front-end projects </p>
+
+                 <p>Programming Experiences : C++, Java (Oriented Object Programming), XML, PHP, JavaScript, Python, and web development (Bootstrap, & AngularJS ), Swift, JSP(Java Server Pages) </p>
+
+                 <p> Designed and developed fully functional website applications that are connected to localhost database using Php, JSP, etc. </p>
+
+                 <p>Knowledge of relational and non-relational database, Phpmyadmin(Analyzing Business Metrics) </p>
+                 </div>
+             </div>
+           </div>
+         </div>
+
+
+
+</body>
+</html>
