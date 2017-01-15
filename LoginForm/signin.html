@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Login Form</title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+      <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+
+<div class="login">
+  <div class="login-header">
+    <h1>Login</h1>
+  </div>
+<form action="demo_form.asp" method="post">
+  <div class="login-form">
+    <label for="username">
+    <h3>Username:</h3>
+    <input type="text" name="username" id="username" placeholder="Username must be between 8 and 20 characters" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+    </label>
+
+    <label for="password">
+    <h3>Password:</h3>
+    <input type="password" name="password" id="password" placeholder="Password must contain 1 uppercase, lowercase and number" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+    </label>
+    <br>
+    <input type="button" value="Login" class="login-button"/>
+    
+    
+    <a class="sign-up">Sign Up!</a>
+    <br>
+    <h6 class="no-access">Can't access your account?</h6>
+
+    </div>
+  </form>
+</div>
+<iframe height='356' scrolling='no' title='Sign-Up/Login Form' src='//codepen.io/ehermanson/embed/KwKWEv/?height=356&theme-id=0&default-tab=css&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/ehermanson/pen/KwKWEv/'>Sign-Up/Login Form</a> by Eric (<a href='http://codepen.io/ehermanson'>@ehermanson</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+   
+</body>
+</html>
